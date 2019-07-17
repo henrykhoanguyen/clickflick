@@ -30,6 +30,7 @@ There is a Heroku post build script so that you do not have to compile your Reac
 Store files of client side. Files include: App.js, App.css
 
 **src** - App.js, App.css
+
 **public** - files produce after compiled.
 
 ## Application Info
