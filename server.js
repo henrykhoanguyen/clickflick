@@ -7,7 +7,7 @@ const mysql = require('mysql');
 const db = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
-    password : '10Dieuran!',
+    password : 'PEOPle1234', // Paul: PEOPle1234 Khoa: 10Dieuran!
     database : 'moviedb'
 });
 
@@ -25,6 +25,7 @@ app.use(express.json());
 
 // User Routes
 app.use('/api/login', require('./routes/api/login'));
+app.use('/api/single', require('./routes/api/single'));
 
 const port = process.env.PORT || 5000;
 
