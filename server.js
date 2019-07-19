@@ -24,7 +24,8 @@ const app = express();
 app.use(express.json());
 
 // User Routes
-app.use('/api/login', require('./routes/api/login'));
+app.use('/', require('./routes/api/index'));
+app.use('/users', require('./routes/api/users'));
 
 const port = process.env.PORT || 5000;
 
