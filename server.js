@@ -1,22 +1,8 @@
 const express = require('express');
 const path = require('path');
 const config = require('config');
-const mysql = require('mysql');
+//const mysql = require('mysql');
 
-// Create connection
-const db = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'root',
-    password : '10Dieuran!', // Paul: PEOPle1234 Khoa: 10Dieuran!
-    database : 'moviedb'
-});
-
-// Connect
-db.connect((err) => {
-    if(err) throw err;
-
-    console.log("MySQL Connected...");
-});
 
 const app = express();
 
