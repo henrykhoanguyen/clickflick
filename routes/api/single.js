@@ -5,22 +5,9 @@
  */
 const express = require('express');
 const router = express.Router();
-const mysql = require('mysql');
 
-const db = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'root',
-    password : 'PEOPle1234', // Paul: PEOPle1234 Khoa: 10Dieuran!
-    database : 'moviedb'
-});
-
-// Connect
-db.connect((err) => {
-    if(err) throw err;
-    console.log("MySQL Connected...");
-});
-
-const app = express();
+// Import db
+const db = require('../../models/Movie');
 
 
 // @route GET Movie
@@ -36,4 +23,5 @@ router.get('/', (req, res) => {
     });
 });
 
+module.exports = router;
 
