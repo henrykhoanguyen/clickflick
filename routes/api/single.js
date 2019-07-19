@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
     let sql = 'select m.id, m.title ,m.year, m.director, r.rating from movies m, ratings r where r.movieId = m.id order by m.id';
     let query = db.query(sql, (err, results) => {
         if (err) throw err;
-        console.log(results);
+        //console.log(results);
         res.send('Gets fetched...');
     });
 });
