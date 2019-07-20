@@ -1,12 +1,14 @@
 const express = require('express');
 const path = require('path');
 const config = require('config');
+const cors = require('cors');
 //const mysql = require('mysql');
 
 
 const app = express();
 
 // Middleware
+app.use(cors());
 app.use(express.json());
 
 // User Routes - Khoa

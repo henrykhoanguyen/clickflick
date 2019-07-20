@@ -7,7 +7,7 @@ const express = require('express');
 const router = express.Router();
 
 // Import db
-const db = require('../../models/Movie');
+const db = require('../../models/MySQL');
 
 
 // @route GET Movie
