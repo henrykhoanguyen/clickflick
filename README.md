@@ -1,5 +1,9 @@
 # ClickFlick
+## Description
 A movie application that is built with MERN stack along with Redux for state management, Reactstrap and react-transition-group.
+
+## Objective
+To develop a website using MERN stack.
 
 ## Getting Started
 ```bash
